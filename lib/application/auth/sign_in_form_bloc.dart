@@ -34,13 +34,13 @@ class SignInFormBloc extends Bloc<SignInFormEvent, SignInFormState> {
           authFailureOrSuccessOption: none(),
         );
       },
-      registerWithCredentials: (e) async* {
+      registerWithEmailAndPassword: (e) async* {
         yield* _performActionOnAuthFacadeWithCredentials(
-            _authFacade.registerWithCredentials);
+            _authFacade.registerWithEmailAndPassword);
       },
-      signInWithCredentials: (e) async* {
+      signInWithEmailAndPassword: (e) async* {
         yield* _performActionOnAuthFacadeWithCredentials(
-            _authFacade.signInWithCredentials);
+            _authFacade.signInWithEmailAndPassword);
       },
       signInWithGoogle: (e) async* {
         yield state.copyWith(

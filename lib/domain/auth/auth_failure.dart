@@ -7,5 +7,6 @@ abstract class AuthFailure with _$AuthFailure {
   const factory AuthFailure.cancelledByUser() = CancelledByUser;
   const factory AuthFailure.serverError() = ServerError;
   const factory AuthFailure.emailAlreadyInUse() = EmailAlreadyInUse;
-  const factory AuthFailure.invalidCredentials() = InvalidCredentials;
+  const factory AuthFailure.invalidEmailAndPasswordCombination() =
+      InvalidEmailAndPasswordCombination;
 }

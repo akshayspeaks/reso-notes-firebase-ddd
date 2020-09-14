@@ -27,13 +27,13 @@ class _$SignInFormEventTearOff {
   }
 
 // ignore: unused_element
-  _RegisterWithCredentials registerWithCredentials() {
-    return const _RegisterWithCredentials();
+  _RegisterWithEmailAndPassword registerWithEmailAndPassword() {
+    return const _RegisterWithEmailAndPassword();
   }
 
 // ignore: unused_element
-  _SignInWithCredentials signInWithCredentials() {
-    return const _SignInWithCredentials();
+  _SignInWithEmailAndPassword signInWithEmailAndPassword() {
+    return const _SignInWithEmailAndPassword();
   }
 
 // ignore: unused_element
@@ -50,16 +50,16 @@ mixin _$SignInFormEvent {
   Result when<Result extends Object>({
     @required Result emailChanged(String emailStr),
     @required Result passwordChanged(String passStr),
-    @required Result registerWithCredentials(),
-    @required Result signInWithCredentials(),
+    @required Result registerWithEmailAndPassword(),
+    @required Result signInWithEmailAndPassword(),
     @required Result signInWithGoogle(),
   });
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result emailChanged(String emailStr),
     Result passwordChanged(String passStr),
-    Result registerWithCredentials(),
-    Result signInWithCredentials(),
+    Result registerWithEmailAndPassword(),
+    Result signInWithEmailAndPassword(),
     Result signInWithGoogle(),
     @required Result orElse(),
   });
@@ -67,16 +67,19 @@ mixin _$SignInFormEvent {
   Result map<Result extends Object>({
     @required Result emailChanged(_EmailChanged value),
     @required Result passwordChanged(_PasswordChanged value),
-    @required Result registerWithCredentials(_RegisterWithCredentials value),
-    @required Result signInWithCredentials(_SignInWithCredentials value),
+    @required
+        Result registerWithEmailAndPassword(
+            _RegisterWithEmailAndPassword value),
+    @required
+        Result signInWithEmailAndPassword(_SignInWithEmailAndPassword value),
     @required Result signInWithGoogle(_SignInWithGoogle value),
   });
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result emailChanged(_EmailChanged value),
     Result passwordChanged(_PasswordChanged value),
-    Result registerWithCredentials(_RegisterWithCredentials value),
-    Result signInWithCredentials(_SignInWithCredentials value),
+    Result registerWithEmailAndPassword(_RegisterWithEmailAndPassword value),
+    Result signInWithEmailAndPassword(_SignInWithEmailAndPassword value),
     Result signInWithGoogle(_SignInWithGoogle value),
     @required Result orElse(),
   });
@@ -165,14 +168,14 @@ class _$_EmailChanged with DiagnosticableTreeMixin implements _EmailChanged {
   Result when<Result extends Object>({
     @required Result emailChanged(String emailStr),
     @required Result passwordChanged(String passStr),
-    @required Result registerWithCredentials(),
-    @required Result signInWithCredentials(),
+    @required Result registerWithEmailAndPassword(),
+    @required Result signInWithEmailAndPassword(),
     @required Result signInWithGoogle(),
   }) {
     assert(emailChanged != null);
     assert(passwordChanged != null);
-    assert(registerWithCredentials != null);
-    assert(signInWithCredentials != null);
+    assert(registerWithEmailAndPassword != null);
+    assert(signInWithEmailAndPassword != null);
     assert(signInWithGoogle != null);
     return emailChanged(emailStr);
   }
@@ -182,8 +185,8 @@ class _$_EmailChanged with DiagnosticableTreeMixin implements _EmailChanged {
   Result maybeWhen<Result extends Object>({
     Result emailChanged(String emailStr),
     Result passwordChanged(String passStr),
-    Result registerWithCredentials(),
-    Result signInWithCredentials(),
+    Result registerWithEmailAndPassword(),
+    Result signInWithEmailAndPassword(),
     Result signInWithGoogle(),
     @required Result orElse(),
   }) {
@@ -199,14 +202,17 @@ class _$_EmailChanged with DiagnosticableTreeMixin implements _EmailChanged {
   Result map<Result extends Object>({
     @required Result emailChanged(_EmailChanged value),
     @required Result passwordChanged(_PasswordChanged value),
-    @required Result registerWithCredentials(_RegisterWithCredentials value),
-    @required Result signInWithCredentials(_SignInWithCredentials value),
+    @required
+        Result registerWithEmailAndPassword(
+            _RegisterWithEmailAndPassword value),
+    @required
+        Result signInWithEmailAndPassword(_SignInWithEmailAndPassword value),
     @required Result signInWithGoogle(_SignInWithGoogle value),
   }) {
     assert(emailChanged != null);
     assert(passwordChanged != null);
-    assert(registerWithCredentials != null);
-    assert(signInWithCredentials != null);
+    assert(registerWithEmailAndPassword != null);
+    assert(signInWithEmailAndPassword != null);
     assert(signInWithGoogle != null);
     return emailChanged(this);
   }
@@ -216,8 +222,8 @@ class _$_EmailChanged with DiagnosticableTreeMixin implements _EmailChanged {
   Result maybeMap<Result extends Object>({
     Result emailChanged(_EmailChanged value),
     Result passwordChanged(_PasswordChanged value),
-    Result registerWithCredentials(_RegisterWithCredentials value),
-    Result signInWithCredentials(_SignInWithCredentials value),
+    Result registerWithEmailAndPassword(_RegisterWithEmailAndPassword value),
+    Result signInWithEmailAndPassword(_SignInWithEmailAndPassword value),
     Result signInWithGoogle(_SignInWithGoogle value),
     @required Result orElse(),
   }) {
@@ -305,14 +311,14 @@ class _$_PasswordChanged
   Result when<Result extends Object>({
     @required Result emailChanged(String emailStr),
     @required Result passwordChanged(String passStr),
-    @required Result registerWithCredentials(),
-    @required Result signInWithCredentials(),
+    @required Result registerWithEmailAndPassword(),
+    @required Result signInWithEmailAndPassword(),
     @required Result signInWithGoogle(),
   }) {
     assert(emailChanged != null);
     assert(passwordChanged != null);
-    assert(registerWithCredentials != null);
-    assert(signInWithCredentials != null);
+    assert(registerWithEmailAndPassword != null);
+    assert(signInWithEmailAndPassword != null);
     assert(signInWithGoogle != null);
     return passwordChanged(passStr);
   }
@@ -322,8 +328,8 @@ class _$_PasswordChanged
   Result maybeWhen<Result extends Object>({
     Result emailChanged(String emailStr),
     Result passwordChanged(String passStr),
-    Result registerWithCredentials(),
-    Result signInWithCredentials(),
+    Result registerWithEmailAndPassword(),
+    Result signInWithEmailAndPassword(),
     Result signInWithGoogle(),
     @required Result orElse(),
   }) {
@@ -339,14 +345,17 @@ class _$_PasswordChanged
   Result map<Result extends Object>({
     @required Result emailChanged(_EmailChanged value),
     @required Result passwordChanged(_PasswordChanged value),
-    @required Result registerWithCredentials(_RegisterWithCredentials value),
-    @required Result signInWithCredentials(_SignInWithCredentials value),
+    @required
+        Result registerWithEmailAndPassword(
+            _RegisterWithEmailAndPassword value),
+    @required
+        Result signInWithEmailAndPassword(_SignInWithEmailAndPassword value),
     @required Result signInWithGoogle(_SignInWithGoogle value),
   }) {
     assert(emailChanged != null);
     assert(passwordChanged != null);
-    assert(registerWithCredentials != null);
-    assert(signInWithCredentials != null);
+    assert(registerWithEmailAndPassword != null);
+    assert(signInWithEmailAndPassword != null);
     assert(signInWithGoogle != null);
     return passwordChanged(this);
   }
@@ -356,8 +365,8 @@ class _$_PasswordChanged
   Result maybeMap<Result extends Object>({
     Result emailChanged(_EmailChanged value),
     Result passwordChanged(_PasswordChanged value),
-    Result registerWithCredentials(_RegisterWithCredentials value),
-    Result signInWithCredentials(_SignInWithCredentials value),
+    Result registerWithEmailAndPassword(_RegisterWithEmailAndPassword value),
+    Result signInWithEmailAndPassword(_SignInWithEmailAndPassword value),
     Result signInWithGoogle(_SignInWithGoogle value),
     @required Result orElse(),
   }) {
@@ -376,32 +385,34 @@ abstract class _PasswordChanged implements SignInFormEvent {
   _$PasswordChangedCopyWith<_PasswordChanged> get copyWith;
 }
 
-abstract class _$RegisterWithCredentialsCopyWith<$Res> {
-  factory _$RegisterWithCredentialsCopyWith(_RegisterWithCredentials value,
-          $Res Function(_RegisterWithCredentials) then) =
-      __$RegisterWithCredentialsCopyWithImpl<$Res>;
+abstract class _$RegisterWithEmailAndPasswordCopyWith<$Res> {
+  factory _$RegisterWithEmailAndPasswordCopyWith(
+          _RegisterWithEmailAndPassword value,
+          $Res Function(_RegisterWithEmailAndPassword) then) =
+      __$RegisterWithEmailAndPasswordCopyWithImpl<$Res>;
 }
 
-class __$RegisterWithCredentialsCopyWithImpl<$Res>
+class __$RegisterWithEmailAndPasswordCopyWithImpl<$Res>
     extends _$SignInFormEventCopyWithImpl<$Res>
-    implements _$RegisterWithCredentialsCopyWith<$Res> {
-  __$RegisterWithCredentialsCopyWithImpl(_RegisterWithCredentials _value,
-      $Res Function(_RegisterWithCredentials) _then)
-      : super(_value, (v) => _then(v as _RegisterWithCredentials));
+    implements _$RegisterWithEmailAndPasswordCopyWith<$Res> {
+  __$RegisterWithEmailAndPasswordCopyWithImpl(
+      _RegisterWithEmailAndPassword _value,
+      $Res Function(_RegisterWithEmailAndPassword) _then)
+      : super(_value, (v) => _then(v as _RegisterWithEmailAndPassword));
 
   @override
-  _RegisterWithCredentials get _value =>
-      super._value as _RegisterWithCredentials;
+  _RegisterWithEmailAndPassword get _value =>
+      super._value as _RegisterWithEmailAndPassword;
 }
 
-class _$_RegisterWithCredentials
+class _$_RegisterWithEmailAndPassword
     with DiagnosticableTreeMixin
-    implements _RegisterWithCredentials {
-  const _$_RegisterWithCredentials();
+    implements _RegisterWithEmailAndPassword {
+  const _$_RegisterWithEmailAndPassword();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'SignInFormEvent.registerWithCredentials()';
+    return 'SignInFormEvent.registerWithEmailAndPassword()';
   }
 
   @override
@@ -409,12 +420,12 @@ class _$_RegisterWithCredentials
     super.debugFillProperties(properties);
     properties
       ..add(DiagnosticsProperty(
-          'type', 'SignInFormEvent.registerWithCredentials'));
+          'type', 'SignInFormEvent.registerWithEmailAndPassword'));
   }
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _RegisterWithCredentials);
+    return identical(this, other) || (other is _RegisterWithEmailAndPassword);
   }
 
   @override
@@ -425,16 +436,16 @@ class _$_RegisterWithCredentials
   Result when<Result extends Object>({
     @required Result emailChanged(String emailStr),
     @required Result passwordChanged(String passStr),
-    @required Result registerWithCredentials(),
-    @required Result signInWithCredentials(),
+    @required Result registerWithEmailAndPassword(),
+    @required Result signInWithEmailAndPassword(),
     @required Result signInWithGoogle(),
   }) {
     assert(emailChanged != null);
     assert(passwordChanged != null);
-    assert(registerWithCredentials != null);
-    assert(signInWithCredentials != null);
+    assert(registerWithEmailAndPassword != null);
+    assert(signInWithEmailAndPassword != null);
     assert(signInWithGoogle != null);
-    return registerWithCredentials();
+    return registerWithEmailAndPassword();
   }
 
   @override
@@ -442,14 +453,14 @@ class _$_RegisterWithCredentials
   Result maybeWhen<Result extends Object>({
     Result emailChanged(String emailStr),
     Result passwordChanged(String passStr),
-    Result registerWithCredentials(),
-    Result signInWithCredentials(),
+    Result registerWithEmailAndPassword(),
+    Result signInWithEmailAndPassword(),
     Result signInWithGoogle(),
     @required Result orElse(),
   }) {
     assert(orElse != null);
-    if (registerWithCredentials != null) {
-      return registerWithCredentials();
+    if (registerWithEmailAndPassword != null) {
+      return registerWithEmailAndPassword();
     }
     return orElse();
   }
@@ -459,16 +470,19 @@ class _$_RegisterWithCredentials
   Result map<Result extends Object>({
     @required Result emailChanged(_EmailChanged value),
     @required Result passwordChanged(_PasswordChanged value),
-    @required Result registerWithCredentials(_RegisterWithCredentials value),
-    @required Result signInWithCredentials(_SignInWithCredentials value),
+    @required
+        Result registerWithEmailAndPassword(
+            _RegisterWithEmailAndPassword value),
+    @required
+        Result signInWithEmailAndPassword(_SignInWithEmailAndPassword value),
     @required Result signInWithGoogle(_SignInWithGoogle value),
   }) {
     assert(emailChanged != null);
     assert(passwordChanged != null);
-    assert(registerWithCredentials != null);
-    assert(signInWithCredentials != null);
+    assert(registerWithEmailAndPassword != null);
+    assert(signInWithEmailAndPassword != null);
     assert(signInWithGoogle != null);
-    return registerWithCredentials(this);
+    return registerWithEmailAndPassword(this);
   }
 
   @override
@@ -476,61 +490,64 @@ class _$_RegisterWithCredentials
   Result maybeMap<Result extends Object>({
     Result emailChanged(_EmailChanged value),
     Result passwordChanged(_PasswordChanged value),
-    Result registerWithCredentials(_RegisterWithCredentials value),
-    Result signInWithCredentials(_SignInWithCredentials value),
+    Result registerWithEmailAndPassword(_RegisterWithEmailAndPassword value),
+    Result signInWithEmailAndPassword(_SignInWithEmailAndPassword value),
     Result signInWithGoogle(_SignInWithGoogle value),
     @required Result orElse(),
   }) {
     assert(orElse != null);
-    if (registerWithCredentials != null) {
-      return registerWithCredentials(this);
+    if (registerWithEmailAndPassword != null) {
+      return registerWithEmailAndPassword(this);
     }
     return orElse();
   }
 }
 
-abstract class _RegisterWithCredentials implements SignInFormEvent {
-  const factory _RegisterWithCredentials() = _$_RegisterWithCredentials;
+abstract class _RegisterWithEmailAndPassword implements SignInFormEvent {
+  const factory _RegisterWithEmailAndPassword() =
+      _$_RegisterWithEmailAndPassword;
 }
 
-abstract class _$SignInWithCredentialsCopyWith<$Res> {
-  factory _$SignInWithCredentialsCopyWith(_SignInWithCredentials value,
-          $Res Function(_SignInWithCredentials) then) =
-      __$SignInWithCredentialsCopyWithImpl<$Res>;
+abstract class _$SignInWithEmailAndPasswordCopyWith<$Res> {
+  factory _$SignInWithEmailAndPasswordCopyWith(
+          _SignInWithEmailAndPassword value,
+          $Res Function(_SignInWithEmailAndPassword) then) =
+      __$SignInWithEmailAndPasswordCopyWithImpl<$Res>;
 }
 
-class __$SignInWithCredentialsCopyWithImpl<$Res>
+class __$SignInWithEmailAndPasswordCopyWithImpl<$Res>
     extends _$SignInFormEventCopyWithImpl<$Res>
-    implements _$SignInWithCredentialsCopyWith<$Res> {
-  __$SignInWithCredentialsCopyWithImpl(_SignInWithCredentials _value,
-      $Res Function(_SignInWithCredentials) _then)
-      : super(_value, (v) => _then(v as _SignInWithCredentials));
+    implements _$SignInWithEmailAndPasswordCopyWith<$Res> {
+  __$SignInWithEmailAndPasswordCopyWithImpl(_SignInWithEmailAndPassword _value,
+      $Res Function(_SignInWithEmailAndPassword) _then)
+      : super(_value, (v) => _then(v as _SignInWithEmailAndPassword));
 
   @override
-  _SignInWithCredentials get _value => super._value as _SignInWithCredentials;
+  _SignInWithEmailAndPassword get _value =>
+      super._value as _SignInWithEmailAndPassword;
 }
 
-class _$_SignInWithCredentials
+class _$_SignInWithEmailAndPassword
     with DiagnosticableTreeMixin
-    implements _SignInWithCredentials {
-  const _$_SignInWithCredentials();
+    implements _SignInWithEmailAndPassword {
+  const _$_SignInWithEmailAndPassword();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'SignInFormEvent.signInWithCredentials()';
+    return 'SignInFormEvent.signInWithEmailAndPassword()';
   }
 
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
     properties
-      ..add(
-          DiagnosticsProperty('type', 'SignInFormEvent.signInWithCredentials'));
+      ..add(DiagnosticsProperty(
+          'type', 'SignInFormEvent.signInWithEmailAndPassword'));
   }
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _SignInWithCredentials);
+    return identical(this, other) || (other is _SignInWithEmailAndPassword);
   }
 
   @override
@@ -541,16 +558,16 @@ class _$_SignInWithCredentials
   Result when<Result extends Object>({
     @required Result emailChanged(String emailStr),
     @required Result passwordChanged(String passStr),
-    @required Result registerWithCredentials(),
-    @required Result signInWithCredentials(),
+    @required Result registerWithEmailAndPassword(),
+    @required Result signInWithEmailAndPassword(),
     @required Result signInWithGoogle(),
   }) {
     assert(emailChanged != null);
     assert(passwordChanged != null);
-    assert(registerWithCredentials != null);
-    assert(signInWithCredentials != null);
+    assert(registerWithEmailAndPassword != null);
+    assert(signInWithEmailAndPassword != null);
     assert(signInWithGoogle != null);
-    return signInWithCredentials();
+    return signInWithEmailAndPassword();
   }
 
   @override
@@ -558,14 +575,14 @@ class _$_SignInWithCredentials
   Result maybeWhen<Result extends Object>({
     Result emailChanged(String emailStr),
     Result passwordChanged(String passStr),
-    Result registerWithCredentials(),
-    Result signInWithCredentials(),
+    Result registerWithEmailAndPassword(),
+    Result signInWithEmailAndPassword(),
     Result signInWithGoogle(),
     @required Result orElse(),
   }) {
     assert(orElse != null);
-    if (signInWithCredentials != null) {
-      return signInWithCredentials();
+    if (signInWithEmailAndPassword != null) {
+      return signInWithEmailAndPassword();
     }
     return orElse();
   }
@@ -575,16 +592,19 @@ class _$_SignInWithCredentials
   Result map<Result extends Object>({
     @required Result emailChanged(_EmailChanged value),
     @required Result passwordChanged(_PasswordChanged value),
-    @required Result registerWithCredentials(_RegisterWithCredentials value),
-    @required Result signInWithCredentials(_SignInWithCredentials value),
+    @required
+        Result registerWithEmailAndPassword(
+            _RegisterWithEmailAndPassword value),
+    @required
+        Result signInWithEmailAndPassword(_SignInWithEmailAndPassword value),
     @required Result signInWithGoogle(_SignInWithGoogle value),
   }) {
     assert(emailChanged != null);
     assert(passwordChanged != null);
-    assert(registerWithCredentials != null);
-    assert(signInWithCredentials != null);
+    assert(registerWithEmailAndPassword != null);
+    assert(signInWithEmailAndPassword != null);
     assert(signInWithGoogle != null);
-    return signInWithCredentials(this);
+    return signInWithEmailAndPassword(this);
   }
 
   @override
@@ -592,21 +612,21 @@ class _$_SignInWithCredentials
   Result maybeMap<Result extends Object>({
     Result emailChanged(_EmailChanged value),
     Result passwordChanged(_PasswordChanged value),
-    Result registerWithCredentials(_RegisterWithCredentials value),
-    Result signInWithCredentials(_SignInWithCredentials value),
+    Result registerWithEmailAndPassword(_RegisterWithEmailAndPassword value),
+    Result signInWithEmailAndPassword(_SignInWithEmailAndPassword value),
     Result signInWithGoogle(_SignInWithGoogle value),
     @required Result orElse(),
   }) {
     assert(orElse != null);
-    if (signInWithCredentials != null) {
-      return signInWithCredentials(this);
+    if (signInWithEmailAndPassword != null) {
+      return signInWithEmailAndPassword(this);
     }
     return orElse();
   }
 }
 
-abstract class _SignInWithCredentials implements SignInFormEvent {
-  const factory _SignInWithCredentials() = _$_SignInWithCredentials;
+abstract class _SignInWithEmailAndPassword implements SignInFormEvent {
+  const factory _SignInWithEmailAndPassword() = _$_SignInWithEmailAndPassword;
 }
 
 abstract class _$SignInWithGoogleCopyWith<$Res> {
@@ -656,14 +676,14 @@ class _$_SignInWithGoogle
   Result when<Result extends Object>({
     @required Result emailChanged(String emailStr),
     @required Result passwordChanged(String passStr),
-    @required Result registerWithCredentials(),
-    @required Result signInWithCredentials(),
+    @required Result registerWithEmailAndPassword(),
+    @required Result signInWithEmailAndPassword(),
     @required Result signInWithGoogle(),
   }) {
     assert(emailChanged != null);
     assert(passwordChanged != null);
-    assert(registerWithCredentials != null);
-    assert(signInWithCredentials != null);
+    assert(registerWithEmailAndPassword != null);
+    assert(signInWithEmailAndPassword != null);
     assert(signInWithGoogle != null);
     return signInWithGoogle();
   }
@@ -673,8 +693,8 @@ class _$_SignInWithGoogle
   Result maybeWhen<Result extends Object>({
     Result emailChanged(String emailStr),
     Result passwordChanged(String passStr),
-    Result registerWithCredentials(),
-    Result signInWithCredentials(),
+    Result registerWithEmailAndPassword(),
+    Result signInWithEmailAndPassword(),
     Result signInWithGoogle(),
     @required Result orElse(),
   }) {
@@ -690,14 +710,17 @@ class _$_SignInWithGoogle
   Result map<Result extends Object>({
     @required Result emailChanged(_EmailChanged value),
     @required Result passwordChanged(_PasswordChanged value),
-    @required Result registerWithCredentials(_RegisterWithCredentials value),
-    @required Result signInWithCredentials(_SignInWithCredentials value),
+    @required
+        Result registerWithEmailAndPassword(
+            _RegisterWithEmailAndPassword value),
+    @required
+        Result signInWithEmailAndPassword(_SignInWithEmailAndPassword value),
     @required Result signInWithGoogle(_SignInWithGoogle value),
   }) {
     assert(emailChanged != null);
     assert(passwordChanged != null);
-    assert(registerWithCredentials != null);
-    assert(signInWithCredentials != null);
+    assert(registerWithEmailAndPassword != null);
+    assert(signInWithEmailAndPassword != null);
     assert(signInWithGoogle != null);
     return signInWithGoogle(this);
   }
@@ -707,8 +730,8 @@ class _$_SignInWithGoogle
   Result maybeMap<Result extends Object>({
     Result emailChanged(_EmailChanged value),
     Result passwordChanged(_PasswordChanged value),
-    Result registerWithCredentials(_RegisterWithCredentials value),
-    Result signInWithCredentials(_SignInWithCredentials value),
+    Result registerWithEmailAndPassword(_RegisterWithEmailAndPassword value),
+    Result signInWithEmailAndPassword(_SignInWithEmailAndPassword value),
     Result signInWithGoogle(_SignInWithGoogle value),
     @required Result orElse(),
   }) {
