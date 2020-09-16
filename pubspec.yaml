@@ -34,6 +34,8 @@ dependencies:
   injectable: ^1.0.4
   get_it: ^4.0.4
 
+  flushbar: ^1.10.4
+
 dependency_overrides:
   analyzer: '0.39.14'
 
