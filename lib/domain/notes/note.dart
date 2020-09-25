@@ -3,7 +3,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:kt_dart/collection.dart';
 import 'package:notes_firebase_ddd/domain/core/failures.dart';
 import 'package:notes_firebase_ddd/domain/core/value_objects.dart';
-import 'package:notes_firebase_ddd/domain/notes/notes_value_objects.dart';
+import 'package:notes_firebase_ddd/domain/notes/note_value_objects.dart';
 import 'package:notes_firebase_ddd/domain/notes/todo_item.dart';
 part 'note.freezed.dart';
 
